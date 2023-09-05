@@ -1,3 +1,5 @@
+# This Python code is a simple implementation of the classic word guessing game often referred to as "Hangman." 
+
 import random
 
 word_list = [
