@@ -1,4 +1,4 @@
-# command that allow the computer to make random decisions. 
+# This code simulates a simple rock-paper-scissors game between a user and a computer. 
 # The ready-made pictures of stone, paper and numbers were taken from the following website: https://ascii.co.uk/art
 
 import random
