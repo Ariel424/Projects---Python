@@ -1,3 +1,5 @@
+# This Python code represents a text-based adventure game called "Treasure Island." In the game, the player is presented with a series of choices and must navigate through different scenarios to reach the treasure or face various challenges. 
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
