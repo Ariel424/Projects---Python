@@ -1,5 +1,2 @@
-# Games---Python
-A series of games I wrote through Python.
-Game number 1: Find The Treasure - using control flow and logical operator.
-Game number 2: Rock paper scissors - using randomisation and lists. 
-Game number 3: Password Generator - using randomisation and for loops.
+# Projects ---Python
+I have a collection of Python programs I've developed, each of which is clearly labeled with its purpose in the program's title."
