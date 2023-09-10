@@ -1,6 +1,3 @@
-# This code simulates a simple rock-paper-scissors game between a user and a computer. 
-# The ready-made pictures of stone, paper and numbers were taken from the following website: https://ascii.co.uk/art
-
 import random
 
 rock = '''
@@ -30,28 +27,21 @@ scissors = '''
 ---.__(___)
 '''
 
-# I want that in the solution that the images will be presented  
 game_images = [rock, paper, scissors]
 
-# imput to out choise in the game.
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-print(game_images[user_choice])
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
 
-# random command to the computer to make a move. We have only 3 options to chose, so the randint is from 0 to 2 (int the computer world we count in binary that starts with 0 count).
-computer_choice = random.randint(0, 2)
-print (f"Computer Choice: {game_images [computer_choice]}")
+if user_choice >= 3 or user_choice < 0:
+    print("You typed an invalid number, you lose!")
+else:
+    print(game_images[user_choice])
 
-# Loops that examine all the options of the game and their result
-if user_choice >= 3 or user_choice < 0: 
-  print("You typed an invalid number, you lose!") 
-elif user_choice == 0 and computer_choice == 2:
-  print("You win!")
-elif computer_choice == 0 and user_choice == 2:
-  print("You lose")
-elif computer_choice > user_choice:
-  print("You lose")
-elif user_choice > computer_choice:
-  print("You win!")
-elif computer_choice == user_choice:
-  print("It's a draw")
+    computer_choice = random.randint(0, 2)
+    print(f"Computer Choice: {game_images[computer_choice]}")
 
+    if user_choice == computer_choice:
+        print("It's a draw!")
+    elif (user_choice == 0 and computer_choice == 2) or (user_choice == 1 and computer_choice == 0) or (user_choice == 2 and computer_choice == 1):
+        print("You win!")
+    else:
+        print("You lose")
