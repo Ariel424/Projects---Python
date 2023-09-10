@@ -39,8 +39,7 @@ print(game_images[user_choice])
 
 # random command to the computer to make a move. We have only 3 options to chose, so the randint is from 0 to 2 (int the computer world we count in binary that starts with 0 count).
 computer_choice = random.randint(0, 2)
-print("Computer chose:")
-print(game_images[computer_choice])
+print (f"Computer Choice: {game_images [computer_choice]}")
 
 # Loops that examine all the options of the game and their result
 if user_choice >= 3 or user_choice < 0: 
