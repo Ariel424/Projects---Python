@@ -290,14 +290,12 @@ logo = '''
 |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     __/ |                      
                    |___/    '''
-print(logo)
-
 display = []
 for _ in range(word_length):
     display += "_"
 
 while not end_of_game:
-    guess = input("Guess a letter: ").lower()
+    guess = input("Please guess a letter:\n").lower()
 
     if guess in display:
         print(f"You've already guessed {guess}")
